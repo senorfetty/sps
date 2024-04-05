@@ -256,7 +256,7 @@ section {
 
 .topbar .contact-info i a,
 .topbar .contact-info i span {
-  padding-left: 5px;
+  padding-left: 2px;
   color: #fff;
 }
 
@@ -2676,10 +2676,148 @@ section {
   max-height: 100%;
 }
 
+.contact_email_phone {
+  color: white;
+}
+
+.contact_email_phone:hover {
+  color: red;
+}
+
+.container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.5;
+
+}
+
+.row.gy-4::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.5;  
+}
+
+.img-fluider {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  align-self: center;
+  align-content: center;
+  margin-left: 17%;
+}
+
+.service-item.enlarge {
+  transition: transform 0.3s ease;
+}
+
+.service-item.enlarge:hover {
+  transform: scale(1.15); /* Increase the size by 10% */
+}
+
+.service-list, .recruit {
+  list-style-type:none;
+}
+
+.view {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.round-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 50px;
+  background-color: rgb(0, 0, 0); 
+  color: white;
+  font-size: 16px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.round-btn:hover {
+  background-color: rgb(255, 0, 0); /* Change background color on hover */
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.card h3 {
+  color: #333;
+}
+
+.card p {
+  color: #666;
+}
+
+.card ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.card ul li {
+  margin-bottom: 5px;
+}
+
+/* Image styles */
+.uniform-image {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+ 
+.holidays li {
+  margin-left:45% ;
+  list-style:disc
+}
+
+th, td {
+  border: 1px solid rgb(255, 0, 0);
+  padding: 5px;
+}
+
+.table {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
 
 
 
+.form-control {
+  border: 1px solid rgb(255, 0, 0); 
+  color: black; 
+}
 
+/* Style placeholder text color to be black */
+.form-control::placeholder {
+  color: black; /* Set placeholder text color to black */
+}
 
-
-
+.dropdown-icon {
+  position: absolute;
+  top: 50%;
+  right: 20px; /* Adjust position as needed */
+  transform: translateY(-50%);
+  pointer-events: none; /* Ensure the icon doesn't interfere with select functionality */
+}
