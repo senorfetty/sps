@@ -27,6 +27,7 @@
   
     <!-- Template Main CSS File -->
     <link href="assets/css/main.css" rel="stylesheet">
+
   
   </head>
   
@@ -41,12 +42,10 @@
           <a href="mailto:sps001grouplimited@gmail.com ">sps001grouplimited@gmail.com </a></i>
         <i class="bi bi-phone d-flex align-items-center ms-4"><a href="tel:+254772222077">+254772222077</a></i>
       </div>
-      <!-- <div class="social-links d-none d-md-flex align-items-center">
-        <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+      <div class="social-links d-none d-md-flex align-items-center">
         <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
-      </div> -->
+        <a href="https://www.linkedin.com/company/sps-security-limited/about/" class="linkedin" target="_blank"><i class="bi bi-linkedin"></i></i></a>
+      </div>
     </div>
   </section><!-- End Top Bar -->
 
@@ -117,6 +116,7 @@
           </div>
   
           <div class="row g-0">
+            <h2>Eldoret Office</h2>
             <div class="col-lg-6">
               <div class="h-100" style="min-height: 400px;">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d484.51077266825865!2d35.2763070771112!3d0.5042303214651782!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x178101f6de4f2e05%3A0xebcd6923b4d00d91!2sSPS%20OFFICE!5e0!3m2!1sen!2ske!4v1712836553391!5m2!1sen!2ske" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -125,7 +125,7 @@
 
   
             <div class="col-lg-6">
-              <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <form id="contact-form" role="form" class="php-email-form">
                 <div class="row">
                   <div class="col-md-6 form-group">
                     <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
@@ -140,11 +140,6 @@
                 <div class="form-group mt-3">
                   <textarea class="form-control" name="message" rows="7" placeholder="Message" required></textarea>
                 </div>
-                <div class="my-3">
-                  <div class="loading">Loading</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">Your message has been sent. Thank you!</div>
-                </div>
                 <div class="text-center"><button type="submit">Send Message</button></div>
               </form>
             </div><!-- End Contact Form -->
@@ -153,12 +148,13 @@
           <br>
           <hr>
 
-          <div class="section-headers">
+          <div class="section-header">
             <h2>Other Branch Location</h2>
           </div>
           
 
           <div class="row g-0">
+            <h2>Mombasa Office</h2>
             <div class="col lg-6">
               <div class="h-100" style="min-height: 400px;">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d995.0274292311759!2d39.71638272850667!3d-3.997859761905831!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zM8KwNTknNTIuMyJTIDM5wrA0MycwMS4zIkU!5e0!3m2!1sen!2ske!4v1712231701183!5m2!1sen!2ske" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -236,12 +232,10 @@
               <span>SPS Security</span>
             </a>
             <p>A leading security service organization which operates responsibly drawing upon its vast experience, expertise and human resources while providing maximum level of security for your business, staff, clients and valuables.</p>
-            <!-- <div class="social-links d-flex mt-4">
-              <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+            <div class="social-links d-flex mt-4">
               <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-              <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-              <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
-            </div> -->
+              <a href="https://www.linkedin.com/company/sps-security-limited/about/" class="linkedin" target="_blank"><i class="bi bi-linkedin"></i></a>
+            </div>
           </div>
   
           <div class="col-lg-2 col-6 footer-links">
@@ -250,8 +244,7 @@
               <li><a href="index.html">Home</a></li>
               <li><a href="about.html">About us</a></li>
               <li><a href="services.html">Services</a></li>
-              <li><a href="#">Terms of service</a></li>
-              <li><a href="#">Privacy policy</a></li>
+              <li><a href="index.html#faq">FAQs</a></li>
             </ul>
           </div>
   
@@ -306,13 +299,6 @@
         <div class="copyright">
           &copy; <span id="currentYear"></span> SPS Security Ltd. All Rights Reserved
         </div>
-        <!-- <div class="credits"> -->
-          <!-- All the links in the footer should remain intact. -->
-          <!-- You can delete the links only if you purchased the pro version. -->
-          <!-- Licensing information: https://bootstrapmade.com/license/ -->
-          <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/impact-bootstrap-business-website-template/ -->
-          <!-- Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> -->
-        <!-- </div> -->
       </div>
   
     </footer><!-- End Footer -->
@@ -335,6 +321,28 @@
   
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
+
+
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    
+    <script>
+      emailjs.init('vAM8Vzqru7BLj-g-i')
+
+      document.getElementById('contact-form').addEventListener('submit', function(event) {
+          event.preventDefault();
+
+          emailjs.sendForm('service_ns8cceh','template_tudlepc',this)
+          .then(function(response){
+              console.log('Email sent ', response)
+              alert('Your Message Has Been Sent Successfully');
+              window.location.href= 'contact.html';
+          }, function(error){
+              console.log('Email not sent', error)
+              alert('Oops! Something went wrong. Please try again later.'); 
+          });
+      });
+    </script>
+
   
   </body>
   
