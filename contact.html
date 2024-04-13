@@ -142,7 +142,15 @@
                 </div>
                 <div class="text-center"><button type="submit">Send Message</button></div>
               </form>
-            </div><!-- End Contact Form -->
+            </div>
+            <!-- End Contact Form -->
+            <div id="myModal" class="modal">
+              <div class="modal-content">
+                  <span class="close">&times;</span>
+                  <p id="modal-message"></p>
+              </div>
+            </div>
+            
   
           </div>
           <br>
@@ -262,7 +270,7 @@
           <div class="col-lg-4 col-6 footer-contact">
             <h4>Contact Us</h4>
             <p>
-              SPS HSE ELGONVIEW Highridge Lane <br>
+              SPS Office Elgon View Estate, Highridge Lane<br>
               Eldoret <br>
               Kenya <br><br>
               <strong>Phone (Eldoret):</strong> +254772222077 / +254725999847<br>
@@ -326,21 +334,39 @@
     <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
     
     <script>
-      emailjs.init('vAM8Vzqru7BLj-g-i')
+      emailjs.init('vAM8Vzqru7BLj-g-i');
 
       document.getElementById('contact-form').addEventListener('submit', function(event) {
           event.preventDefault();
-
-          emailjs.sendForm('service_ns8cceh','template_tudlepc',this)
+      
+          emailjs.sendForm('service_ns8cceh', 'template_tudlepc', this)
           .then(function(response){
-              console.log('Email sent ', response)
-              alert('Your Message Has Been Sent Successfully');
-              window.location.href= 'contact.html';
+              console.log('Email sent ', response);
+              showModal('Your Message Has Been Sent Successfully');
+              document.getElementById('contact-form').reset();
           }, function(error){
-              console.log('Email not sent', error)
-              alert('Oops! Something went wrong. Please try again later.'); 
+              console.log('Email not sent', error);
+              showModal('Oops! Something went wrong. Please try again later.'); 
           });
       });
+      
+      function showModal(message) {
+          var modal = document.getElementById("myModal");
+          var modalMessage = document.getElementById("modal-message");
+          modal.style.display = "block";
+          modalMessage.textContent = message;
+      
+          var span = document.getElementsByClassName("close")[0];
+          span.onclick = function() {
+              modal.style.display = "none";
+          }
+      
+          window.onclick = function(event) {
+              if (event.target == modal) {
+                  modal.style.display = "none";
+              }
+          }
+      }
     </script>
 
   
