@@ -2832,3 +2832,61 @@ th, td {
   text-decoration: none;
   cursor: pointer;
 }
+
+.patrol{
+  width: 40%;
+  max-width: 500px; /* Adjust as needed */
+  height: auto;
+  margin-bottom: 20px;
+  margin: 20px;
+}
+
+.getquote {
+  display: flex;
+  align-items: center;
+  justify-content:space-evenly;
+}
+
+.main-services-info {
+    margin-top: 30px; /* Add space between the section header and the detailed information */
+}
+
+.main-services-info p {
+    margin-bottom: 20px; /* Add space between paragraphs */
+    line-height: 1.6; /* Increase line height for better readability */
+}
+
+.main-services-info strong {
+    color: #ff0000;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  
+}
+
+/* Add a border between sections for better separation */
+.main-services-info p + p {
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+}
+
+/* Style the first paragraph differently to make it stand out */
+.main-services-info p:first-of-type {
+    font-size: 18px; /* Larger font size for the first paragraph */
+    font-weight: bold; /* Bold font weight */
+    color: #333; /* Darker color for the first paragraph */
+}
+
+.alarm-img{
+  margin-left: 20%;  
+}
+
+.consult {
+  width: 60%;
+  max-width: 500px; /* Adjust as needed */
+  height: auto;
+  margin-bottom: 20px;
+  margin: 20px;
+  margin-left: 20%;  
+}
+
