@@ -58,7 +58,22 @@
         <ul>
           <li><a href="index.html">Home</a></li>
           <li class="active"><a href="#about">About</a></li>
-          <li><a href="services.html">Services</a></li>
+          <li class="dropdown"><a href="#">Services<i class="bi bi-chevron-down dropdown-indicator"></i></a>
+            <ul>
+              <li><a href="guarding_and_patrol.html">Guarding and Patrol</a></li>
+              <li><a href="consulting.html">Consulting Service</a></li>
+              <li><a href="cleaning.html">Cleaning Service</a></li>
+              <li><a href="cctv_and_electric_fencing.html">CCTV and Electric Fencing</a></li>
+              <li><a href="security_escort.html">VIP Transport and Security Escort </a></li>    
+              <li><a href="monitoring_and_alarm.html">Monitoring and Alarm</a></li>
+              <li><a href="threat_examination.html">Threat Examination</a></li>
+              <li><a href="investigations.html">Investigations</a></li>
+              <li><a href="communication_hotline.html">Communication Hotline</a></li>
+              <li><a href="high_rise_commercial_property.html">High Rise Commercial Properties </a></li>
+              <li><a href="special_events.html">Special Events</a></li>
+              <li><a href="training_and_seminars.html">Training and Seminars</a></li>        
+            </ul>
+          </li>
           <li><a href="quote.html">Get A Quote</a></li>
           <!-- <li><a href="#team">Team</a></li> -->
           <li class="dropdown"><a href=""><span>Features</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
@@ -352,7 +367,7 @@
   </section>End Clients Section -->
 
   <!-- ======= Our Services Section ======= -->
-  <section class="services sections-bg">
+  <section id="services" class="services sections-bg">
     <div class="container" data-aos="fade-up">
 
       <div class="section-header">
@@ -362,65 +377,89 @@
 
       <div class="row gy-4" data-aos="fade-up" data-aos-delay="100">
 
-          
         <div class="col-lg-4 col-md-6" data-aos="fade-right">
-          <div class="service-item position-relative enlarge">
+          <div class="service-item position-relative enlarge" style="background: url('assets/img/sps6.jpg');">
+            <!-- <div class="background-overlay"></div> -->
             <div class="icon">
-              <i class="bi bi-shield"></i>
+              <i  class="bi bi-shield"></i>
             </div>
-            <h3>Guarding and Patrol Services</h3>
-            <p>Security is undoubtedly a top priority for every person and business. In order to address any
-                security issues, we make sure we provide you with a fully-comprehensive approach..</p>
+            <h3  style="background-color: rgb(255, 255, 255);padding:5px">Guarding and Patrol Services</h3>
+            <p class="service-description" >Security is undoubtedly a top priority for every person and business. In order to address any security issues, we make sure we provide you with a fully-comprehensive approach.
+            <a href="guarding_and_patrol.html" class="readmore stretched-link">Read more <i class="bi bi-arrow-right"></i></a>
+            </p>
           </div>
-        </div><!-- End Service Item -->
-  
-        <div class="col-lg-4 col-md-6"data-aos="fade-up">
-          <div class="service-item position-relative enlarge" >
+        </div>          
+
+        <div class="col-lg-4 col-md-6" data-aos="fade-down">
+          <div class="service-item position-relative enlarge" style="background: url('assets/img/consult.jpg');">
+            <!-- <div class="background-overlay"></div> -->
+            <div class="icon">
+              <i  class="bi bi-graph-up" ></i>
+            </div>
+            <h3  style="background-color: rgb(255, 255, 255);padding:5px">Consulting Services</h3>
+            <p class="service-description">SPS Security Services employs specialized Business Consultants, who can assist companies in 
+              implementing specific requirements, specifications and procedures so that their operation is 
+              both functional and properly conducted.
+            <a href="consulting.html" class="readmore stretched-link">Read more <i class="bi bi-arrow-right"></i></a>
+            </p>
+          </div>
+        </div>
+        
+        <div class="col-lg-4 col-md-6" data-aos="fade-left">
+          <div class="service-item position-relative enlarge" style="background: url('assets/img/cleaning.jpeg');">
             <div class="icon">
               <i class="bi bi-bucket"></i>
             </div>
-            <h3>Cleaning Services</h3>
-            <p>Cleanliness is vital for the complete and fully-effective operation of a business. That is the
+            <h3  style="background-color: rgb(255, 255, 255);padding:5px">Cleaning Services</h3>
+            <p class="service-description">Cleanliness is vital for the complete and fully-effective operation of a business. That is the
                 reason SPS Security Services provides a full package of cleaning services for buildings and
-                business premises.</p>
-          </div>
-        </div><!-- End Service Item -->
-  
-        <div class="col-lg-4 col-md-6" data-aos="fade-left">
-          <div class="service-item position-relative enlarge">
-            <div class="icon">
-              <i class="bi bi-camera"></i>
-            </div>
-            <h3>CCTV and Electric Fencing</h3>
-            <p>Professional CCTV installation services, ensuring secure surveillance for your business to reduce shrinkage and inventory loss.</p>
+                business premises.
+                <a href="cleaning.html" class="readmore stretched-link">Read more <i class="bi bi-arrow-right"></i></a>
+            </p>
           </div>
         </div><!-- End Service Item -->
   
         <div class="col-lg-4 col-md-6" data-aos="fade-right">
-          <div class="service-item position-relative enlarge">
+          <div class="service-item position-relative enlarge" style="background: url('assets/img/cctv.jpeg');">
             <div class="icon">
-              <i class="bi bi-megaphone"></i>
+              <i class="bi bi-camera"></i>
             </div>
-            <h3>Monitoring and Alarm Receiving</h3>
-            <p>We offer customers all-inclusive security services, including a state-of-the-art and technologically advanced Monitoring and Alarm Receiving Center.</p>
+            <h3  style="background-color: rgb(255, 255, 255);padding:5px">CCTV and Electric Fencing</h3>
+            <p class="service-description">Professional CCTV installation services, ensuring secure surveillance for your business to reduce shrinkage and inventory loss.
+              <a href="cctv_and_electric_fencing.html" class="readmore stretched-link">Read more <i class="bi bi-arrow-right"></i></a>
+            </p>
           </div>
         </div><!-- End Service Item -->
   
         <div class="col-lg-4 col-md-6" data-aos="fade-up">
-          <div class="service-item position-relative enlarge">
+          <div class="service-item position-relative enlarge" style="background: url('assets/img/alarm.jpeg');">
+            <div class="icon">
+              <i class="bi bi-megaphone"></i>
+            </div>
+            <h3  style="background-color: rgb(255, 255, 255);padding:5px">Monitoring and Alarm Receiving</h3>
+            <p class="service-description">We offer customers all-inclusive security services, including a state-of-the-art and technologically advanced Monitoring and Alarm Receiving Center.
+              <a href="monitoring_and_alarm.html" class="readmore stretched-link">Read more <i class="bi bi-arrow-right"></i></a>
+            </p>
+          </div>
+        </div><!-- End Service Item -->
+  
+        <div class="col-lg-4 col-md-6" data-aos="fade-left">
+          <div class="service-item position-relative enlarge" style="background: url('assets/img/call2action.jpg');">
             <div class="icon">
               <i class="bi bi-truck"></i>
             </div>
-            <h3>VIP Transport and Security Escort</h3>
-            <p>Our well-trained professionals provide protection services to VIPs, businessmen, and executives (including their families), using luxury, armored vehicles for transport.</p>
+            <h3  style="background-color: rgb(255, 255, 255);padding:5px">VIP Transport and Security Escort</h3>
+            <p class="service-description">Our well-trained professionals provide protection services to VIPs, businessmen, and executives (including their families), using luxury, armored vehicles for transport.
+              <a href="security_escort.html" class="readmore stretched-link">Read more <i class="bi bi-arrow-right"></i></a>
+            </p>
           </div>
-        </div><!-- End Service Item -->
-
+        </div>
+        
       </div> <br>
-      <a href="services.html" style="color: rgb(255, 0, 0);" class="readmore stretched-link">Other Services <i class="bi bi-arrow-right"></i></a>
-          
+
+      <a href="services.html" style="color: rgb(255, 0, 0);">Additional Services <i class="bi bi-arrow-right"></i></a>            
     </div>
-  </section><!-- End Our Services Section -->
+  </section><<!-- End Our Services Section -->
 
 
   </main><!-- End #main -->

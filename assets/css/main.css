@@ -362,7 +362,7 @@ section {
     font-family: var(--font-secondary);
     font-size: 16px;
     font-weight: 600;
-    color: rgba(255, 255, 255, 0.6);
+    color: rgb(255, 255, 255);
     white-space: nowrap;
     transition: 0.3s;
     position: relative;
@@ -399,7 +399,7 @@ section {
   .navbar .active,
   .navbar .active:focus,
   .navbar li:hover>a {
-    color: #fff;
+    color: #ff0000;
   }
 
   .navbar .dropdown ul {
@@ -937,9 +937,13 @@ section {
 
 .services .service-item {
   padding: 40px;
-  background: #fff;
+  /* background: #fff; */
   height: 100%;
   border-radius: 10px;
+  background-size: cover !important; /* Cover the entire container */
+  background-position: center !important; /* Center the background image */
+  background-size: contain !important;
+  background-repeat: no-repeat  !important;
 }
 
 .services .service-item .icon {
@@ -982,6 +986,26 @@ section {
   transition: 0.3s;
 }
 
+.service-description {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-out;
+  background-color: white;
+}
+
+/* Show service descriptions on smaller screens */
+@media (max-width: 768px) {
+  .service-description {
+    max-height: 1000px; /* Adjust the max-height to fit your content */
+  }
+}
+
+.service-item:hover .service-description {
+  max-height: 1000px; /* Adjust the max-height to fit your content */
+  background-color: white;
+}
+
+
 
 .services .service-item p {
   line-height: 24px;
@@ -996,7 +1020,7 @@ section {
 }
 
 .services .service-item:hover .icon:before {
-  background: #000000;
+  background: #ffffff;
 }
 
 .services .service-item:hover h3 {
@@ -1873,7 +1897,23 @@ section {
   position: relative;
   background: var(--color-primary);
   padding: 60px 0 0 0;
+
 }
+
+/* Add this CSS to your stylesheet */
+.hero {
+  position: relative;
+}
+
+.background-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4); /* Adjust the opacity to control brightness */
+}
+
 
 @media (min-width: 1365px) {
   .hero {
@@ -1904,13 +1944,23 @@ section {
   border-radius: 50px;
   transition: 0.3s;
   color: #fff;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgb(0, 0, 0);
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.08);
   border: 2px solid rgba(255, 255, 255, 0.1);
 }
 
 .hero .btn-get-started:hover {
   border-color: rgb(255, 0, 0);
+  background-color: white;
+  color: black;
+}
+
+@media (max-width: 1200px) {
+  .hero { 
+    background-size: contain !important;
+    background-repeat: no-repeat  !important;
+    
+  }
 }
 
 .hero .btn-watch-video {
@@ -2890,3 +2940,13 @@ th, td {
   margin-left: 20%;  
 }
 
+
+/* Override display: none; */
+a[href$=".pdf"] {
+  display: inline !important;
+}
+
+/* Override visibility: hidden; */
+a[href$=".pdf"] {
+  visibility: visible !important;
+}
