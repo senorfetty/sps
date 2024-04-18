@@ -27,13 +27,13 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/m.scss">
-
-
 
 </head>
 
 <body>
+  <style>
+    
+  </style>
   <!-- ======= Header ======= -->
   <section id="topbar" class="topbar d-flex align-items-center">
     <div class="container d-flex justify-content-center justify-content-md-between">
@@ -60,7 +60,7 @@
         <ul>
           <li class="active"><a href="#home">Home</a></li>
           <li><a href="about.html">About Us</a></li>
-          <li class="dropdown"><a href="#">Services<i class="bi bi-chevron-down dropdown-indicator"></i></a>
+          <li class="dropdown"><a href="#">Services<i class="bi bi-chevron-down dropdown-indicator" style="color: white;"></i></a>
             <ul>
               <li><a href="guarding_and_patrol.html">Guarding and Patrol</a></li>
               <li><a href="consulting.html">Consulting Service</a></li>
@@ -78,7 +78,7 @@
           </li>
           <li><a href="quote.html">Get A Quote</a></li>
           <!-- <li><a href="#team">Team</a></li> -->
-          <li class="dropdown"><a href="#">Features<i class="bi bi-chevron-down dropdown-indicator"></i></a>
+          <li class="dropdown"><a href="#">Features<i class="bi bi-chevron-down dropdown-indicator" style="color: white;"></i></a>
             <ul>
               <li><a href="pricing.html">Pricing</a></li>
               <li><a href="quote.html">Quotation</a></li>
@@ -97,244 +97,749 @@
   </header><!-- End Header -->
   <!-- End Header -->
 
-  <style>
-    .slider_section {
-      -webkit-box-flex: 1;
-          -ms-flex: 1;
-              flex: 1;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: column;
-              flex-direction: column;
-      -webkit-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: center;
-      color: #ffffff;
-    }
-    
-    .slider_section .row {
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center;
-    }
-    
-    .slider_section .detail-box {
-      width: 100%;
-      margin: 0 auto;
-    }
-    
-    .slider_section .detail-box h1 {
-      text-transform: uppercase;
-      font-size: 3rem;
-      color: #ffffff;
-      font-weight: 600;
-    }
-    
-    .slider_section .detail-box h1 span {
-      color: #f1db25;
-    }
-    
-    .slider_section .detail-box p {
-      margin-top: 25px;
-    }
-    
-    .slider_section .detail-box .btn-box {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      margin-top: 30px;
-    }
-    
-    .slider_section .detail-box .btn-box a {
-      width: 180px;
-      text-align: center;
-      margin: 5px;
-    }
-    
-    .slider_section .detail-box .btn-box .btn-1 {
-      display: inline-block;
-      padding: 10px 35px;
-      background-color: #ffffff;
-      color: #000000;
-      -webkit-transition: all 0.3s;
-      transition: all 0.3s;
-      border: 1px solid transparent;
-    }
-    
-    .slider_section .detail-box .btn-box .btn-1:hover {
-      background-color: transparent;
-      border-color: #ffffff;
-      color: #ffffff;
-    }
-    
-    .slider_section .detail-box .btn-box .btn-2 {
-      display: inline-block;
-      padding: 10px 35px;
-      background-color: #f1db25;
-      color: #ffffff;
-      -webkit-transition: all 0.3s;
-      transition: all 0.3s;
-      border: 1px solid transparent;
-    }
-    
-    .slider_section .detail-box .btn-box .btn-2:hover {
-      background-color: transparent;
-      border-color: #f1db25;
-      color: #f1db25;
-    }
-    
-    .slider_section .img-box {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-    }
-    
-    .slider_section .img-box img {
-      width: 100%;
-    }
-    
-    .slider_section .idicator_container {
-      position: relative;
-    }
-    
-    .slider_section ol.carousel-indicators {
-      margin: 0;
-      bottom: -75px;
-      -webkit-box-pack: end;
-          -ms-flex-pack: end;
-              justify-content: flex-end;
-    }
-    
-    .slider_section ol.carousel-indicators li {
-      width: 20px;
-      height: 20px;
-      border-radius: 100%;
-      text-align: center;
-      background-color: #f1db25;
-      opacity: 1;
-      border: none;
-      margin: 0 4px;
-    }
-    
-    .slider_section ol.carousel-indicators li.active {
-      background-color: #ffffff;
-    }
 
-    .carousel-item {
-      background-size: cover !important; /* Cover the entire container */
-      background-position: center !important; /* Center the background image */
-      background-size: contain !important;
-      background-repeat: no-repeat  !important;
-  }
-  
+  <!-- ======= Hero Section ======= -->
+  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
     
-  </style>
-
-
-
-<section class="slider_section ">
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" >
-      <div class="carousel-inner">
-        <div class="carousel-item active" style="background:url('assets/img/sps6.jpg')">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-7">
-                <div class="detail-box">
-                  <h1 style="color: white;">
-                    Elevate Your Experience <br>
-                    <span>
-                      with the SPS Security Services Offerings
-                    </span>
-                  </h1>
-                  <p>
-                    We've got you covered every step of the way.
-                    From crafting your service package to delivering, updating, and supporting it, we're there from the get-go.
-                    Offering security, cleaning, and training services tailored to your schedule and needs.
-                  </p>
-                  <div class="btn-box">
-                    <a href="" class="btn-1"> Read more </a>
-                    <a href="" class="btn-2">Get A Quote</a>
+      <!-- Slide 1 -->
+      <section id="hero" class="hero aos-animate" style="background:url('assets/img/call2action.jpg');" data-aos="zoom-out" data-aos-delay="100">
+        <div class="carousel-item active">
+          <div class="background-overlay"></div>
+          <div class="first-slide">
+            <div class="container position-relative">
+              <div class="row gy-5" data-aos="fade-in">
+                <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center text-center text-lg-start">
+                  <h2>Welcome to <span>SPS SECURITY</span></h2>
+                  <p style="color: white; font-weight:700">A leading security service organization which operates responsibly drawing upon its vast experience, expertise and human resources while providing maximum level of security for your business, staff, clients and valuables.</p>
+                  <div class="d-flex justify-content-center justify-content-lg-start">
+                    <a href="contact.html"  class="btn-get-started">Contact Us</a>
+                    <a href="quote.html" class="btn-get-started">Get Quote</a>
+                    <!-- <a href="https://youtu.be/w3BSOA0fiHA" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Watch Video</span></a> -->
                   </div>
+                </div>
+                <div class="col-lg-6 order-1 order-lg-2">
+                  <!-- <img src="assets/img/spslogo2.jpg" class="img-fluid" alt="" data-aos="zoom-out" data-aos-delay="100"> -->
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="carousel-item " style="background:url('assets/img/call2action.jpg')">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-7">
-                <div class="detail-box">
-                  <h1>
-                    Elevate Your Experience <br>
-                    <span>
-                      with Our Premium Service Offerings
-                    </span>
-                  </h1>
-                  <p>
-                    We've got you covered every step of the way.
-                    From crafting your service package to delivering, updating, and supporting it, we're there from the get-go.
-                    Offering security, cleaning, and training services tailored to your schedule and needs.
-                  </p>
-                  <div class="btn-box">
-                    <a href="" class="btn-1"> Read more </a>
-                    <a href="" class="btn-2">Get A Quote</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="carousel-item " style="background:url('assets/img/sps3.jpg')">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-7">
-                <div class="detail-box">
-                  <h1>
-                    Elevate Your Experience <br>
-                    <span>
-                      with Our Premium Service Offerings
-                    </span>
-                  </h1>
-                  <p>
-                    We've got you covered every step of the way.
-                    From crafting your service package to delivering, updating, and supporting it, we're there from the get-go.
-                    Offering security, cleaning, and training services tailored to your schedule and needs.
-                  </p>
-                  <div class="btn-box">
-                    <a href="" class="btn-1"> Read more </a>
-                    <a href="" class="btn-2">Get A Quote</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+         
+        
       </div>
-      <div class="container idicator_container">
-        <ol class="carousel-indicators">
-          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-        </ol>
+      </section>
+      
+      <!-- Slide 2 -->
+      <div class="carousel-item">
+        <section id="hero" class="hero aos-animate" style="background:url('assets/img/sps6.jpg')">
+          <div class="background-overlay"></div>
+          <div class="second-slide">
+            <div class="container position-relative">
+              <div class="row gy-5" data-aos="fade-in">
+                <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center text-center text-lg-start">
+                  <h2>Ensuring Your Peace of Mind</h2>
+                  <p style="color: white; font-weight:700">We are dedicated to providing comprehensive security solutions tailored to your needs, so you can focus on what matters most.</p>
+                 <div class="d-flex justify-content-center justify-content-lg-start">
+                  <a href="contact.html"  class="btn-get-started">Contact Us</a>
+                  <a href="quote.html" class="btn-get-started">Get Quote</a>
+                    <!-- <a href="https://youtu.be/w3BSOA0fiHA" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Watch Video</span></a> -->
+                  </div>
+                </div>
+                <div class="col-lg-6 order-1 order-lg-2">
+                  <!-- <img src="assets/img/spslogo2.jpg" class="img-fluid" alt="" data-aos="zoom-out" data-aos-delay="100"> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        
+        </section>
+      </div>
+  
+      <!-- Slide 3 -->
+      <div class="carousel-item">
+        <section id="hero" class="hero aos-animate" style="background:url('assets/img/sps3.jpg')">
+          <div class="background-overlay"></div>
+          <div class="third-slide">
+            <div class="container position-relative">
+              <div class="row gy-5" data-aos="fade-in">
+                <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center text-center text-lg-start">
+                  <h2>Partnering for Your Security Needs</h2>
+                  <p style="color: white; font-weight:700">At SPS SECURITY, we believe in building lasting partnerships with our clients to ensure their security requirements are met with excellence.</p>
+                  <div class="d-flex justify-content-center justify-content-lg-start">
+                    <a href="contact.html"  class="btn-get-started">Contact Us</a>
+                    <a href="quote.html" class="btn-get-started">Get Quote</a>
+                    <!-- <a href="https://youtu.be/w3BSOA0fiHA" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Watch Video</span></a> -->
+                  </div>
+                </div>
+                <div class="col-lg-6 order-1 order-lg-2">
+                  <!-- <img src="assets/img/spslogo2.jpg" class="img-fluid" alt="" data-aos="zoom-out" data-aos-delay="100"> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>  
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+    <div class="icon-boxes position-relative">
+      <div class="container position-relative">
+        <div class="row gy-4 mt-5">
+          <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="icon-box">
+              <div class="icon"><i class="bi bi-gem"></i></div>
+              <h4 class="title"><a>Top Quality Service</a></h4>
+            </div>
+          </div><!--End Icon Box -->
+          <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="icon-box">
+              <div class="icon"><i class="bi bi-camera"></i></div>
+              <h4 class="title"><a>State-of-the-Art Technology</a></h4>
+            </div>
+          </div><!--End Icon Box -->
+          <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="icon-box">
+              <div class="icon"><i class="bi bi-emoji-smile"></i></div>
+              <h4 class="title"><a>Your Satisfaction Guaranteed</a></h4>
+            </div>
+          </div><!--End Icon Box -->
+          <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="500">
+            <div class="icon-box">
+              <div class="icon"><i class="bi bi-trophy"></i></div>
+              <h4 class="title"><a>Experience the SPS Advantage</a></h4>
+            </div>
+          </div><!--End Icon Box -->
+        </div>
       </div>
     </div>
-  </section>
-  <!-- end slider section -->
-  <br>
-
-
-  <!-- jQuery -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-  <!-- Bootstrap JS -->
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </div>
   
+  <!-- End Hero Section -->
 
+
+  <main id="home">
+
+    <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header">
+          <h2>About Us</h2>
+          <p>SPS Security (formely Shalom) is now operating as merger of the following companies Shalom SPS Company Ltd ;This comprises of Seamate, Shalom, Perfect Scan forming SPS. We are licensed by Private Security Regulatory Authority PSRA/SSCL/19/Y5, bonded, and fully insured against all types of risks</p>
+        </div>
+
+        <div class="row gy-4">
+          <div class="col-lg-6">
+            <h3>What You Need To Know About Us</h3>
+              <img src="assets/img/sps1.jpg" class="img-fluid rounded-4 mb-4" alt="">           
+              <p>SPS Security is a leading security service organization which operates responsibly
+                drawing upon its vast experience, expertise and human resources while providing maximum
+                level of security for your business, staff, clients and valuables. It is of fundamental importance
+                that the relationships built throughout the company’s dealings are based on trust. Furthermore,
+                the company strives to methodically and systematically invest in top quality, state-of-the-art
+                technology as well as to apply all relevant standards and specifications, in order to fully meet
+                the needs and expectations of its customers.
+              </p>
+               <p>
+                The partners of SPS security possesses over 20 years’ experience in security, investigations, and the
+                protection services in the field. Our management staffs, including the top management, has prior working
+                experience with the reputable security agencies and numerous state and local law enforcement agencies in
+                the country and are currently networking with several international agencies as well.
+              </p>
+          </div>
+          <div class="col-lg-6">
+            <div class="content ps-0 ps-lg-5">
+              <p class="fst-italic">
+                What You Get From Us.
+              </p>
+              <ul>
+                <li><i class="bi bi-check-circle-fill"></i> Highly Trained Personnel and Customized Service Packages.</li>
+                <li><i class="bi bi-check-circle-fill"></i> Operational Efficiency and Advanced Technology.</li>
+                <li><i class="bi bi-check-circle-fill"></i> Commitment to Continuous Development and Client Satisfaction.</li>
+              </ul>
+             
+              <div class="position-relative mt-4">    
+                <div class="x-slider swiper">
+                  <div class="swiper-wrapper align-items-center">
+                    <div class="swiper-slide"><img src="assets/img/sps3.jpg" class="img-fluid rounded-mb-4" alt=""></div>
+                    <div class="swiper-slide"><img src="assets/img/sps5.jpg" class="img-fluid rounded-4 mb-4" alt=""></div>
+                    <div class="swiper-slide"> <img src="assets/img/sps6.jpg" class="img-fluid rounded-4 mb-4" alt=""></div>
+                    <div class="swiper-slide"> <img src="assets/img/sps7.jpg" class="img-fluid rounded-4 mb-4" alt=""></div>
+                    <div class="swiper-slide"> <img src="assets/img/sps8.jpg" class="img-fluid rounded-4 mb-4" alt=""></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> 
+        </div>
+        <a href="about.html" style="color:red">Read more <i class="bi bi-arrow-right"></i></a> 
+      </div>
+    </section><!-- End About Us Section -->
+
+
+    <!-- ======= Our Services Section ======= -->
+    <section id="services" class="services sections-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header">
+          <h2>Our Services</h2>
+          <p>High-quality services tailor-made to meet your individual business needs</p>
+        </div>
+
+        <div class="row gy-4" data-aos="fade-up" data-aos-delay="100">
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-right">
+            <div class="service-item position-relative enlarge" style="background: url('assets/img/sps6.jpg');">
+              <!-- <div class="background-overlay"></div> -->
+              <div class="icon">
+                <i  class="bi bi-shield"></i>
+              </div>
+              <h3  style="background-color: rgb(255, 255, 255);padding:5px">Guarding and Patrol Services</h3>
+              <p class="service-description" >Security is undoubtedly a top priority for every person and business. In order to address any security issues, we make sure we provide you with a fully-comprehensive approach.
+              <a href="guarding_and_patrol.html" class="readmore stretched-link">Read more <i class="bi bi-arrow-right"></i></a>
+              </p>
+            </div>
+          </div>          
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-down">
+            <div class="service-item position-relative enlarge" style="background: url('assets/img/consult.jpg');">
+              <!-- <div class="background-overlay"></div> -->
+              <div class="icon">
+                <i  class="bi bi-graph-up" ></i>
+              </div>
+              <h3  style="background-color: rgb(255, 255, 255);padding:5px">Consulting Services</h3>
+              <p class="service-description">SPS Security Services employs specialized Business Consultants, who can assist companies in 
+                implementing specific requirements, specifications and procedures so that their operation is 
+                both functional and properly conducted.
+              <a href="consulting.html" class="readmore stretched-link">Read more <i class="bi bi-arrow-right"></i></a>
+              </p>
+            </div>
+          </div>
+          
+          <div class="col-lg-4 col-md-6" data-aos="fade-left">
+            <div class="service-item position-relative enlarge" style="background: url('assets/img/cleaning.jpeg');">
+              <div class="icon">
+                <i class="bi bi-bucket"></i>
+              </div>
+              <h3  style="background-color: rgb(255, 255, 255);padding:5px">Cleaning Services</h3>
+              <p class="service-description">Cleanliness is vital for the complete and fully-effective operation of a business. That is the
+                  reason SPS Security Services provides a full package of cleaning services for buildings and
+                  business premises.
+                  <a href="cleaning.html" class="readmore stretched-link">Read more <i class="bi bi-arrow-right"></i></a>
+              </p>
+            </div>
+          </div><!-- End Service Item -->
+    
+          <div class="col-lg-4 col-md-6" data-aos="fade-right">
+            <div class="service-item position-relative enlarge" style="background: url('assets/img/cctv.jpeg');">
+              <div class="icon">
+                <i class="bi bi-camera"></i>
+              </div>
+              <h3  style="background-color: rgb(255, 255, 255);padding:5px">CCTV and Electric Fencing</h3>
+              <p class="service-description">Professional CCTV installation services, ensuring secure surveillance for your business to reduce shrinkage and inventory loss.
+                <a href="cctv_and_electric_fencing.html" class="readmore stretched-link">Read more <i class="bi bi-arrow-right"></i></a>
+              </p>
+            </div>
+          </div><!-- End Service Item -->
+    
+          <div class="col-lg-4 col-md-6" data-aos="fade-up">
+            <div class="service-item position-relative enlarge" style="background: url('assets/img/alarm.jpeg');">
+              <div class="icon">
+                <i class="bi bi-megaphone"></i>
+              </div>
+              <h3  style="background-color: rgb(255, 255, 255);padding:5px">Monitoring and Alarm Receiving</h3>
+              <p class="service-description">We offer customers all-inclusive security services, including a state-of-the-art and technologically advanced Monitoring and Alarm Receiving Center.
+                <a href="monitoring_and_alarm.html" class="readmore stretched-link">Read more <i class="bi bi-arrow-right"></i></a>
+              </p>
+            </div>
+          </div><!-- End Service Item -->
+    
+          <div class="col-lg-4 col-md-6" data-aos="fade-left">
+            <div class="service-item position-relative enlarge" style="background: url('assets/img/call2action.jpg');">
+              <div class="icon">
+                <i class="bi bi-truck"></i>
+              </div>
+              <h3  style="background-color: rgb(255, 255, 255);padding:5px">VIP Transport and Security Escort</h3>
+              <p class="service-description">Our well-trained professionals provide protection services to VIPs, businessmen, and executives (including their families), using luxury, armored vehicles for transport.
+                <a href="security_escort.html" class="readmore stretched-link">Read more <i class="bi bi-arrow-right"></i></a>
+              </p>
+            </div>
+          </div>
+          
+        </div> <br>
+
+        <a href="services.html" style="color: rgb(255, 0, 0);">Additional Services <i class="bi bi-arrow-right"></i></a>            
+      </div>
+    </section><!-- End Our Services Section -->
+
+
+   <!-- ======= Clients Section ======= -->
+    <section id="clients" class="clients">
+      <div class="container" data-aos="zoom-out">
+        <div class="section-header">
+          <h2>Our Clients</h2>
+        </div>
+        <div class="clients-slider swiper">
+          <div class="swiper-wrapper align-items-center">
+            <div class="swiper-slide"><img src="assets/img/clients/shiv.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/acacia_school.jpg" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/airads.jpg" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/kie.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/moi_university.jpg" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/poa.jpg" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/reale_hospital.jpg" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/regions.webp" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/sergoit.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/strawberry.jpg" class="img-fluid" alt=""></div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Clients Section -->
+
+    <!-- ======= Stats Counter Section ======= -->
+    <section id="stats-counter" class="stats-counter">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row gy-4 align-items-center">
+
+          <div class="col-lg-6">
+            <img src="assets/img/stats-img.svg" alt="" class="img-fluid">
+          </div>
+
+          <div class="col-lg-6">
+
+            <div class="stats-item d-flex align-items-center">
+              <span data-purecounter-start="0" data-purecounter-end="200" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong> + Happy Clients</strong> who acquire best services from us</p>
+            </div><!-- End Stats Item -->
+
+            <div class="stats-item d-flex align-items-center">
+              <span data-purecounter-start="0" data-purecounter-end="20" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>Years</strong> of experience</p>
+            </div><!-- End Stats Item -->
+
+            <div class="stats-item d-flex align-items-center">
+              <span data-purecounter-start="0" data-purecounter-end="24" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>/7 Hours Of Support</strong> </p>
+            </div><!-- End Stats Item -->
+
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Stats Counter Section -->
+
+
+    
+    <section id="call-to-action" class="call-to-action">
+      <div class="container text-center" data-aos="zoom-out">
+        <!-- <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="glightbox play-btn"></a> -->
+        <h3>Call To Action</h3>
+        <p> We are Always One Call Away.</p>
+        <a class="cta-btn" href="tel:+254772222077">Call To Action</a>
+      </div>
+    </section>
+
+
+
+    <!-- ======= Our Team Section ======= -->
+    <!-- <section id="team" class="team">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header">
+          <h2>Our Team</h2>
+          <p>The Team at SPS Security Services is incredibly responsive and supportive. Whenever we have had questions or concerns, they have been quick to address them and provide solutions. Their dedication to customer satisfaction is truly commendable.</p>
+        </div>
+
+        <div class="row gy-4">
+
+          <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
+            <div class="member">
+              <img src="assets/img/team/team-1.jpg" class="img-fluid" alt="">
+              <h4>Staff 1</h4>
+              <span>Position</span>
+              <div class="social">
+                <a href=""><i class="bi bi-twitter"></i></a>
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+          <!-- <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="200">
+            <div class="member">
+              <img src="assets/img/team/team-2.jpg" class="img-fluid" alt="">
+              <h4>Staff 2</h4>
+              <span>Position</span>
+              <div class="social">
+                <a href=""><i class="bi bi-twitter"></i></a>
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div>End Team Member -->
+<!-- 
+          <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="300">
+            <div class="member">
+              <img src="assets/img/team/team-3.jpg" class="img-fluid" alt="">
+              <h4>Staff 3</h4>
+              <span>Position</span>
+              <div class="social">
+                <a href=""><i class="bi bi-twitter"></i></a>
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div>End Team Member -->
+
+          <!-- <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="400">
+            <div class="member">
+              <img src="assets/img/team/team-4.jpg" class="img-fluid" alt="">
+              <h4>Staff 4</h4>
+              <span>Position</span>
+              <div class="social">
+                <a href=""><i class="bi bi-twitter"></i></a>
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div> End Team Member -->
+<!-- 
+        </div>
+
+      </div>
+    </section> --> 
+
+ 
+    <!-- ======= Frequently Asked Questions Section ======= -->
+    <section id="faq" class="faq">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4">
+            <div class="content px-xl-5">
+              <h3>Frequently Asked <strong>Questions</strong></h3>
+              <p>
+                Have questions about our services? Find answers to commonly asked questions below.
+              </p>
+            </div>
+          </div>
+        
+          <div class="col-lg-8">
+        
+            <div class="accordion accordion-flush" id="faqlist" data-aos="fade-up" data-aos-delay="100">
+        
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-1">
+                    <span class="num">1.</span>
+                    How qualified are your personnel?
+                  </button>
+                </h3>
+                <div id="faq-content-1" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                  <div class="accordion-body">
+                    Our personnel are highly trained and managed by experienced professionals, ensuring top-notch service.
+                  </div>
+                </div>
+              </div><!-- # Faq item-->
+        
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-2">
+                    <span class="num">2.</span>
+                    What areas do you serve?
+                  </button>
+                </h3>
+                <div id="faq-content-2" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                  <div class="accordion-body">
+                    We cover the whole country(Kenya), providing all our services to various types of offices and commercial properties.
+                  </div>
+                </div>
+              </div><!-- # Faq item-->
+        
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-3">
+                    <span class="num">3.</span>
+                    Do you offer training solutions?
+                  </button>
+                </h3>
+                <div id="faq-content-3" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                  <div class="accordion-body">
+                    Yes, we provide affordable, quality training solutions for individuals seeking career advancement and businesses needing comprehensive staff training. You can view that on our Recruitement and Training page.
+                  </div>
+                </div>
+              </div><!-- # Faq item-->
+        
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-4">
+                    <span class="num">4.</span>
+                    How do you ensure client satisfaction?
+                  </button>
+                </h3>
+                <div id="faq-content-4" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                  <div class="accordion-body">
+                    Our unwavering commitment to excellence has earned us strong partnerships with our clients, who consistently affirm their satisfaction with our services.
+                  </div>
+                </div>
+              </div><!-- # Faq item-->
+        
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-5">
+                    <span class="num">5.</span>
+                    How can I contact you for further inquiries?
+                  </button>
+                </h3>
+                <div id="faq-content-5" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                  <div class="accordion-body">
+                    For any further inquiries or assistance, feel free to reach out to us through our contact page or by calling our office.
+                  </div>
+                </div>
+              </div><!-- # Faq item-->
+        
+            </div>
+        
+          </div>
+        </div>       
+
+      </div>
+    </section><!-- End Frequently Asked Questions Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header">
+          <h2>Contact</h2>
+          <p>Feel Free To Reach us </p>
+        </div>
+
+        <div class="row gx-lg-0 gy-4">
+
+          <div class="col-lg-4">
+
+            <div class="info-container d-flex flex-column align-items-center justify-content-center">
+              <div class="info-item d-flex">
+                <i class="bi bi-geo-alt flex-shrink-0"></i>
+                <div>
+                  <h4>Location:</h4>
+                  <p>SPS Office Elgon View Estate Nyerere road, Highridge lane, ELDORET</p>
+                  <p>SPS house JCC Rd Off Msufini Rd, Bamburi Cement, MOMBASA</p>
+                  <p>Nairobi</p>
+                </div>
+              </div><!-- End Info Item -->
+
+              <div class="info-item d-flex">
+                <i class="bi bi-envelope flex-shrink-0"></i>
+                <div>
+                  <h4>Email:</h4>
+                  <a href="mailto:sps001grouplimited@gmail.com"><p class="contact_email_phone">sps001grouplimited@gmail.com</p></a>
+                  <a href="mailto:infospsgrouplimited@gmail.com"><p class="contact_email_phone">infospsgrouplimited@gmail.com</p></a>
+                </div>
+              </div><!-- End Info Item -->
+
+              <div class="info-item d-flex">
+                <i class="bi bi-phone flex-shrink-0"></i>
+                <div>
+                  <h4>Call:</h4>
+                  <a href="tel:+254772222077"><p class="contact_email_phone">+254772222077</p></a>                  
+                </div>
+              </div><!-- End Info Item -->
+
+              <div class="info-item d-flex">
+                <i class="bi bi-clock flex-shrink-0"></i>
+                <div>
+                  <h4>Open Hours:</h4>
+                  <p>Mon-Sat: 8AM - 5PM</p>
+                </div>
+              </div><!-- End Info Item -->
+            </div>
+
+          </div>
+
+          <div class="col-lg-8">
+            <form id="contactform" role="form" class="php-email-form">
+              <div class="row">
+                <div class="col-md-6 form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="col-md-6 form-group mt-3 mt-md-0">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                </div>
+              </div>
+              <div class="form-group mt-3">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+              </div>
+              <div class="form-group mt-3">
+                <textarea class="form-control" name="message" rows="7" placeholder="Message" required></textarea>
+              </div>
+              <div class="text-center"><button type="submit">Send Message</button></div>
+            </form>
+          </div>
+          
+          <!-- End Contact Form -->
+
+        </div>
+        <div id="myModal" class="modal">
+          <div class="modal-content">
+              <span class="close">&times;</span>
+              <p id="modal-message"></p>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+
+  <footer id="footer" class="footer">
+
+    <div class="container">
+      <div class="row gy-4">
+        <div class="col-lg-5 col-md-12 footer-info">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span>SPS Security</span>
+          </a>
+          <p>A leading security service organization which operates responsibly drawing upon its vast experience, expertise and human resources while providing maximum level of security for your business, staff, clients and valuables.</p>
+          <div class="social-links d-flex mt-4">
+            <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.linkedin.com/company/sps-security-limited/about/" class="linkedin" target="_blank"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="about.html">About us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="#faq">FAQs</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-6 footer-links">
+          <h4>Our Services</h4>
+          <ul>
+            <li><a href="guarding_and_patrol.html">Guarding and Patrol Services</a></li>
+            <li><a href="consulting.html">Consulting Services</a></li>
+            <li><a href="cleaning.html">Cleaning Services</a></li>
+            <li><a href="cctv_and_electric_fencing.html">CCTV and Electric Fencing</a></li>
+            <li><a href="security_escort.html">VIP Transport and Security Escort </a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-4 col-6 footer-contact">
+          <h4>Contact Us</h4>
+          <p>
+            SPS Office Elgon View Estate, Highridge Lane <br>
+            Eldoret <br>
+            Kenya <br><br>
+            <strong>Phone (Eldoret):</strong> +254772222077 / +254725999847<br>
+            <strong>Email:</strong> sps001grouplimited@gmail.com / infospsgrouplimited@gmail.com<br>
+          </p>
+        </div>
+        
+        <div class="col-lg-4 col-6 footer-contact ">
+          <h4>Other Locations</h4>
+          <p>
+            Msufini Avenue <br>
+            Mombasa, Bamburi <br>
+            Kenya <br><br>
+            <strong>Phone (Mombasa):</strong> 0205231250<br>
+            <strong>Email:</strong> sps001grouplimited@gmail.com / infospsgrouplimited@gmail.com<br>
+          </p>
+        </div>
+        
+        <div class="col-lg-4 col-6 footer-contact ">
+          <p>
+            Nairobi <br>
+            CBD <br>
+            Kenya <br><br>
+            <strong>Phone (Nairobi):</strong> <br>
+            <strong>Email:</strong> sps001grouplimited@gmail.com / infospsgrouplimited@gmail.com<br>
+          </p>
+        </div>
+        
+
+      </div>
+    </div>
+
+    <div class="container mt-4">
+      <div class="copyright">
+        &copy; <span id="currentYear"></span> SPS Security Ltd. All Rights Reserved
+      </div>
+    </div>
+
+  </footer>
+
+  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <div id="preloader" style="display: flex; justify-content:center; align-items: center;">
+    <img src="assets/img/sps1.jpg" alt="Loading..." /> 
+  </div>
+
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    
   <script>
+    emailjs.init('vAM8Vzqru7BLj-g-i');
+
+    document.getElementById('contactform').addEventListener('submit', function(event) {
+        event.preventDefault();
+    
+        emailjs.sendForm('service_ns8cceh', 'template_tudlepc', this)
+        .then(function(response){
+            console.log('Email sent ', response);
+            showModal('Your Message Has Been Sent Successfully');
+            document.getElementById('contactform').reset();
+            window.location.href= 'index.html#contact';
+        }, function(error){
+            console.log('Email not sent', error);
+            showModal('Oops! Something went wrong. Please try again later.'); 
+        });
+    });
+    
+    function showModal(message) {
+        var modal = document.getElementById("myModal");
+        var modalMessage = document.getElementById("modal-message");
+        modal.style.display = "block";
+        modalMessage.textContent = message;
+    
+        var span = document.getElementsByClassName("close")[0];
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+    
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    }
+
       $(document).ready(function(){
           // Initialize the carousel with options
           $('.carousel').carousel({
@@ -343,8 +848,24 @@
               wrap: true 
           });
       });
+
+      document.addEventListener('DOMContentLoaded', function () {
+        var carousel = document.querySelector('.carousel');
+        carousel.addEventListener('slide.bs.carousel', function () {
+          // Reset AOS library for the current slide
+          AOS.init({
+            once: true,
+            delay: 100,
+            duration: 1000
+          });
+        });
+      });
+      
+      
+    
   </script>
   
 
 </body>
+
 </html>

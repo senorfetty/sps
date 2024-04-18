@@ -106,10 +106,22 @@ section {
 --------------------------------------------------------------*/
 .breadcrumbs .page-header {
   padding: 60px 0 60px 0;
-  min-height: 20vh;
+  height: 60vh;
   position: relative;
   background-color: var(--color-primary);
+  background-size: cover !important;
+  background-repeat: no-repeat  !important;  
 }
+
+@media (max-width: 1200px) {
+  .breadcrumbs .page-header { 
+    background-size: cover !important;
+    background-repeat: no-repeat  !important;
+    
+  }
+}
+
+
 
 .breadcrumbs .page-header h2 {
   font-size: 56px;
@@ -382,7 +394,7 @@ section {
     height: 2px;
     bottom: -6px;
     left: 0;
-    background-color: var(--color-secondary);
+    background-color: white;
     visibility: hidden;
     width: 0px;
     transition: all 0.3s ease-in-out 0s;
@@ -975,13 +987,13 @@ section {
 }
 
 .services .service-item h3 {
-  color: var(--color-secondary);
+  color: var(--color-primary);
   font-weight: 700;
-  margin: 0 0 20px 0;
+  /* margin: 0 0 20px 0;
   padding-bottom: 8px;
   font-size: 22px;
   position: relative;
-  display: inline-block;
+  display: inline-block; */
   border-bottom: 4px solid #ff0000;
   transition: 0.3s;
 }
@@ -1955,6 +1967,27 @@ section {
   color: black;
 }
 
+.btn-request-qoute {
+  font-family: var(--font-primary);
+  font-weight: 500;
+  font-size: 15px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 14px 40px;
+  border-radius: 50px;
+  transition: 0.3s;
+  color: #fff;
+  background: rgb(0, 0, 0);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.08);
+  border: 2px solid rgba(255, 255, 255, 0.1)
+}
+
+.btn-request-qoute:hover {
+  border-color: rgb(255, 0, 0);
+  background-color: white;
+  color: black;
+}
+
 @media (max-width: 1200px) {
   .hero { 
     background-size: contain !important;
@@ -2014,8 +2047,8 @@ section {
   padding: 60px 30px;
   position: relative;
   overflow: hidden;
-  background: #000000;
-  box-shadow: 0 0 29px 0 rgba(0, 0, 0, 0.08);
+  background: #00000089;
+  box-shadow: 0 0 29px 0 rgb(0, 0, 0);
   transition: all 0.3s ease-in-out;
   border-radius: 8px;
   z-index: 1;
@@ -2031,7 +2064,7 @@ section {
 }
 
 .hero .icon-box .title a {
-  color: #fff;
+  color: #ffffff;
   transition: 0.3s;
 }
 
@@ -2751,6 +2784,8 @@ section {
 .service-item.enlarge:hover {
   transform: scale(1.15); /* Increase the size by 10% */
 }
+
+
 
 .service-list, .recruit {
   list-style-type:none;
