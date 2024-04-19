@@ -161,10 +161,10 @@ window.addEventListener('scroll', function() {
    * Clients Slider
    */
   new Swiper('.clients-slider', {
-    speed: 400,
+    speed: 600,
     loop: true,
     autoplay: {
-      delay: 3000,
+      delay: 1000,
       disableOnInteraction: false
     },
     slidesPerView: 'auto',
@@ -175,11 +175,11 @@ window.addEventListener('scroll', function() {
     },
     breakpoints: {
       320: {
-        slidesPerView: 2,
+        slidesPerView: 3,
         spaceBetween: 40
       },
       480: {
-        slidesPerView: 3,
+        slidesPerView: 4,
         spaceBetween: 60
       },
       640: {

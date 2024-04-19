@@ -50,14 +50,19 @@
   <header id="header" class="header d-flex align-items-center">
     <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
       <a href="index.html" class="logo d-flex align-items-center">
-        <img src="assets/img/sps1logo.png" alt="">
-        <h1>S<span>P</span>S<span> </span></h1>
+        <img src="assets/img/logo4.jpg" alt="">
+        <!-- <h1>S<span>P</span>S<span> </span></h1> -->
       </a>
       <nav id="navbar" class="navbar">
         <ul>
           <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li class="dropdown"><a href="#">Services<i class="bi bi-chevron-down dropdown-indicator" style="color: white;"></i></a>
+          <li class="dropdown"><a href="#">About Us<i class="bi bi-chevron-down dropdown-indicator" style="color: white;"></i></a>
+            <ul>
+              <li><a href="about.html">Our Company</a></li>
+              <li><a target="_blank" href="SPS_PROFILE.pdf" >SPS Profile Document</a></li>
+            </ul>
+          </li>   
+          <li class="dropdown"><a href="#">Our Services<i class="bi bi-chevron-down dropdown-indicator" style="color: white;"></i></a>
             <ul>
               <li><a href="guarding_and_patrol.html">Guarding and Patrol</a></li>
               <li><a href="consulting.html">Consulting Service</a></li>
@@ -338,12 +343,12 @@
   <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
     
   <script>
-    emailjs.init('vAM8Vzqru7BLj-g-i')
+    emailjs.init('LU1HAqJ4G8dVbZxME')
 
     document.getElementById('quoteform').addEventListener('submit', function(event) {
         event.preventDefault();
 
-        emailjs.sendForm('service_5f1qn8a','template_fggp2ud',this)
+        emailjs.sendForm('service_y82i42u','template_gkjrd79',this)
         .then(function(response){
           console.log('Email sent ', response);
           showModal('Your Message Has Been Sent Successfully');

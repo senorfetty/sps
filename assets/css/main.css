@@ -318,8 +318,9 @@ section {
 }
 
 .header .logo img {
-  max-height: 40px;
+  max-height: 100px;
   margin-right: 6px;
+  margin-top: 10px;
 }
 
 .header .logo h1 {
@@ -1403,11 +1404,11 @@ section {
 --------------------------------------------------------------*/
 .team .member {
   text-align: center;
-  background: #ff0000;
+  background: #00000072;
   border-radius: 10px;
   padding: 15px;
   overflow: hidden;
-  box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.9);
 }
 
 .team .member img {
@@ -1469,6 +1470,47 @@ section {
 .team .member .social i {
   font-size: 18px;
   margin: 0 2px;
+}
+
+.member .team-img::before,
+.member .team-img::after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.447);
+    transition: .5s;
+}
+
+.member .team-img::after {
+    left: auto;
+    right: 0;
+}
+
+.member:hover .team-img::before,
+.member:hover .team-img::after {
+    width: 70%;
+}
+
+.member .team-img .team-social {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between !important;
+    transition: .5s;
+    z-index: 3;
+    opacity: 0;
+}
+
+.member:hover .team-img .team-social {
+    transition-delay: .3s;
+    opacity: 1;
 }
 
 /*--------------------------------------------------------------
