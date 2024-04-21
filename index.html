@@ -31,6 +31,44 @@
 </head>
 
 <body>
+  <style>
+    .director-list {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+  }
+  
+  .director-list li {
+      margin-bottom: 0.8rem;
+      font-size: 1.1rem;
+      position: relative;
+      transition: transform 0.3s ease;
+  }
+  
+  .director-list li i {
+      margin-right: 0.5rem;
+      color: #007bff; /* Blue color */
+  }
+  
+  /* Hover animation */
+  .director-list li:hover {
+      transform: translateX(5px);
+      transition: transform 0.3s ease;
+  }
+  
+  /* Animate the chevron icon */
+  .director-list li i {
+      position: absolute;
+      left: -20px;
+      transition: left 0.3s ease;
+  }
+  
+  .director-list li:hover i {
+      left: 0;
+      transition: left 0.3s ease;
+  }
+  
+  </style>
   <!-- ======= Header ======= -->
   <section id="topbar" class="topbar d-flex align-items-center">
     <div class="container d-flex justify-content-center justify-content-md-between">
@@ -41,7 +79,7 @@
         <i class="bi bi-phone d-flex align-items-center ms-4"><a href="tel:+254772222077">+254772222077</a></i>
       </div>
       <div class="social-links d-none d-md-flex align-items-center">
-        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+        <!-- <a href="#" class="facebook"><i class="bi bi-facebook"></i></a> -->
         <a href="https://www.linkedin.com/company/sps-security-limited/about/" class="linkedin" target="_blank"><i class="bi bi-linkedin"></i></i></a>
       </div>
     </div>
@@ -609,13 +647,13 @@
 
 
         <div class="row gy-4" style="display: flex; justify-content:space-evenly">
-          <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-xl-4 d-flex" data-aos="fade-up" data-aos-delay="100">
             <div class="member">
                     <div class="team-img position-relative overflow-hidden">
                         <img class="img-fluid" src="assets/img/team/team1.jpg" alt="">
                         <div class="team-social">
                             <a class="btn btn-square btn-primary rounded-circle m-1" style="background-color: black;" href="tel:+254705287717"><i class="bi bi-phone"></i></a>
-                            <a class="btn btn-square btn-primary rounded-circle m-1" style="background-color: black;" href="grgyegon@gmail.com"><i class="bi bi-envelope"></i></a>
+                            <a class="btn btn-square btn-primary rounded-circle m-1" style="background-color: black;" href="mailto:grgyegon@gmail.com"><i class="bi bi-envelope"></i></a>
                             <a class="btn btn-square btn-primary rounded-circle m-1" style="background-color: black;" href=""><i class="bi bi-facebook"></i></a>
                         </div>
                     </div>
@@ -627,23 +665,23 @@
                 </div>
             </div>
           
-  
-            <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-down" data-aos-delay="900">
-              <div class="member">
-                      <div class="team-img position-relative overflow-hidden">
-                          <img class="img-fluid" src="assets/img/team/team2.jpg" alt="">
-                          <div class="team-social">
-                            <a class="btn btn-square btn-primary rounded-circle m-1" style="background-color: black;" href=""><i class="bi bi-phone"></i></a>
-                            <a class="btn btn-square btn-primary rounded-circle m-1" style="background-color: black;" href=""><i class="bi bi-envelope"></i></a>
-                            <a class="btn btn-square btn-primary rounded-circle m-1" style="background-color: black;" href=""><i class="bi bi-facebook"></i></a>
-                          </div>
-                      </div>
-                      <div class="bg-light text-center p-4">
-                        <h5>Mrs. Gloria </h5>
-                        <span style="color: black;"> SPS Security Director</span>
-                      </div>
+            <div class="col-xl-6 lg-12" data-aos="fade-down" data-aos-delay="900">
+              <div class="mem">
+                  <div class="bg-light text-center p-4">
+                      <h5 style="font-size: 1.5rem; margin-bottom: 1rem;">Other Directors and Shareholders</h5>
+                      <ul class="director-list">
+                          <li><i class="bi bi-chevron-right"></i> Gigi Kitawa</li>
+                          <li><i class="bi bi-chevron-right"></i> Hussein Mohamed Charo</li>
+                          <li><i class="bi bi-chevron-right"></i> Njuguna James</li>
+                          <li><i class="bi bi-chevron-right"></i> Kipkemei Obadia</li>
+                          <li><i class="bi bi-chevron-right"></i> Seamate Protective Services Ltd</li>
+                          <li><i class="bi bi-chevron-right"></i> SPS group international Ltd</li>
+                      </ul>
                   </div>
               </div>
+          </div>
+          
+
         </div>
 
 
@@ -846,7 +884,7 @@
           </a>
           <p>A leading security service organization which operates responsibly drawing upon its vast experience, expertise and human resources while providing maximum level of security for your business, staff, clients and valuables.</p>
           <div class="social-links d-flex mt-4">
-            <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+            <!-- <a href="#" class="facebook"><i class="bi bi-facebook"></i></a> -->
             <a href="https://www.linkedin.com/company/sps-security-limited/about/" class="linkedin" target="_blank"><i class="bi bi-linkedin"></i></a>
           </div>
         </div>
