@@ -2864,6 +2864,26 @@ section {
   margin-bottom: 20px;
 }
 
+.cardname {
+  background-color: #eae4e4;
+  border-radius: 10px;
+  border: 1px solid red;
+  box-shadow: 0 4px 6px rgba(217, 32, 32, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+  font-style: italic;
+  font-weight: 400;
+  transition: transform 0.9s;
+  text-decoration:underline ;
+}
+
+.cardname:hover {
+  background-color: #000;
+  color: white;
+  transform: translateY(-5px);
+}
+
+
 .card h3 {
   color: #333;
 }
