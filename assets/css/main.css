@@ -2873,14 +2873,14 @@ section {
   margin-bottom: 20px;
   font-style: italic;
   font-weight: 400;
-  transition: transform 0.9s;
+  transition: transform 0.6s;
   text-decoration:underline ;
 }
 
 .cardname:hover {
   background-color: #000;
   color: white;
-  transform: translateY(-5px);
+  transform: translateY(-25px);
 }
 
 
